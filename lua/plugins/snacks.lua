@@ -5,6 +5,10 @@ return {
       sources = {
         explorer = {
           auto_close = true,
+          hidden = true,
+        },
+        files = {
+          hidden = true,
         },
       },
     },
