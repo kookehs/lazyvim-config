@@ -35,13 +35,16 @@ return {
       preset = "default",
 
       ["<S-Tab>"] = { "snippet_backward", "fallback" },
-      ['<Tab>'] = {
+      ["<Tab>"] = {
         function(cmp)
-          if cmp.snippet_active() then return cmp.accept()
-          else return cmp.select_and_accept() end
+          if cmp.snippet_active() then
+            return cmp.accept()
+          else
+            return cmp.select_and_accept()
+          end
         end,
-        'snippet_forward',
-        'fallback'
+        "snippet_forward",
+        "fallback",
       },
 
       ["<C-n>"] = { "select_next", "fallback" },
@@ -57,7 +60,7 @@ return {
     }
 
     opts.sources = vim.tbl_deep_extend("force", opts.sources or {}, {
-      default = { "buffer", "lsp", "path", "snippets"},
+      default = { "buffer", "lsp", "path", "snippets" },
       providers = {
         buffer = {
           enabled = true,
@@ -70,7 +73,7 @@ return {
         lsp = {
           enabled = true,
           kind = "LSP",
-          min_keyword_length = 1,
+          min_keyword_length = 0,
           module = "blink.cmp.sources.lsp",
           name = "lsp",
           score_offset = 90,
