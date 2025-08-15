@@ -18,6 +18,13 @@ return {
         desc = "which_key_ignore",
       },
       {
+        "<leader>a",
+        icon = {
+          icon = "󰧑",
+        },
+        group = "ai",
+      },
+      {
         "<leader>cg",
         icon = {
           color = "azure",
