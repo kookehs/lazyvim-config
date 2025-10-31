@@ -7,7 +7,6 @@ return {
           return require("codecompanion.adapters").extend("ollama", {
             env = {
               chat_uri = "/v1/chat/completions",
-              model = "gpt-oss:20b",
               models_endpoint = "/v1/models",
               url = "http://localhost:11434",
             },
@@ -16,6 +15,9 @@ return {
               stream = true,
             },
             schema = {
+              model = {
+                default = "gpt-oss:20b",
+              },
               think = {
                 default = true,
               },
