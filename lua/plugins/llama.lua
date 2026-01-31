@@ -10,13 +10,15 @@ return {
       keymap_fim_accept_word = "",
       keymap_fim_trigger = "",
       keymap_inst_accept = "<Tab>",
-      keymap_inst_canel = "<Esc>",
+      keymap_inst_cancel = "<S-Esc>",
       keymap_inst_continue = "",
       keymap_inst_rerun = "",
       max_line_suffix = 1,
       model_fim = "google/codegemma-1.1-2b-GGUF",
-      model_inst = "ggml-org/gemma-3-4b-it-qat-GGUF",
+      -- model_inst = "ggml-org/gemma-3-4b-it-qat-GGUF",
+      model_inst = "ggml-org/gpt-oss-20b-GGUF",
       show_info = 0,
+      stop_strings = { "<|file_separator|>" },
     }
   end,
 }
