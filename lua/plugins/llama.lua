@@ -15,6 +15,7 @@ return {
       keymap_inst_rerun = "",
       max_line_suffix = 1,
       model_fim = "google/codegemma-1.1-2b-GGUF",
+      -- model_inst = "bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF"
       -- model_inst = "ggml-org/gemma-3-4b-it-qat-GGUF",
       model_inst = "ggml-org/gpt-oss-20b-GGUF",
       show_info = 0,
